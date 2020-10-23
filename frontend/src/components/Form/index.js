@@ -16,7 +16,7 @@ const Form = ({ formData, handleChange, handleClick, disabled, subStatus }) => (
         handleChange={handleChange}
         options={itemOptions}
       />
-      {formData.order === "tshirt" && (
+      {formData.order === "shirt" && (
         <Select
           label="T-shirt Size"
           htmlFor="size"

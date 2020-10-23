@@ -1,6 +1,6 @@
 export const itemOptions = [
   { value: "undefined", label: "Pick an item" },
-  { value: "tshirt", label: "T-shirt" },
+  { value: "shirt", label: "T-shirt" },
   { value: "socks", label: "Socks" },
   { value: "bottle", label: "Bottle" },
 ];
@@ -15,7 +15,7 @@ export const sizeOptions = [
 
 export const imgFiles = {
   undefined: "question.jpg",
-  tshirt: "tshirt.png",
+  shirt: "tshirt.png",
   socks: "socks.jpg",
   bottle: "bottle.png",
 };
