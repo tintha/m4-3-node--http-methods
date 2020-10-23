@@ -1,7 +1,14 @@
 import React from "react";
 import styled from "styled-components";
 
-const ConfirmationMsg = () => <Wrapper>Order Confirmed!</Wrapper>;
+const ConfirmationMsg = (props) => {
+  const customer = props.customerInfo;
+  console.log(customer);
+  return <Wrapper>
+    Thank you {customer.givenName}! Your {customer.order} will be shipped to your home in {customer.province}, Canada.
+  </Wrapper>
+}
+
 
 const Wrapper = styled.p`
   position: fixed;
