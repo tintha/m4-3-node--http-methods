@@ -50,13 +50,13 @@ express()
       );
     
 
-    if (order === 'tshirt' && stockDb[order][size] <= 0) {
+    if (order === 'tshirt' && stockDb[order][size] == 0) {
       // Validate that the item selected is actually in stock.
       res.status(400).json({
         status: "error", 
         error: "unavailable"
       })
-    } else if (stockDb[order] <= 0) {
+    } else if (stockDb[order] == 0) {
       res.status(400).json({
         status: "error",  
         error: "unavailable"
